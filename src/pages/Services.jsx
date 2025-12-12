@@ -1,10 +1,17 @@
 import usePageTitle from "../utils/usePageTitle";
+import SEO from "../components/SEO";
 
 export default function Services() {
     usePageTitle("Services");
 
     return (
         <section className="pt-32 pb-20 px-4 max-w-7xl mx-auto">
+            <SEO
+                title="Services — Vritula"
+                description="Vritula offers enterprise-grade services including custom software development, cloud setup and digital consulting."
+                url="https://vritulacorporation.netlify.app/services"
+            />
+
             <h2 className="text-3xl font-semibold text-center mb-6">Services</h2>
             <p className="text-center text-gray-600 mb-8">Comprehensive services from design to deployment.</p>
 

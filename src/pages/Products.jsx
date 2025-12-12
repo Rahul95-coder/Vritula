@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import usePageTitle from "../utils/usePageTitle";
+import SEO from "../components/SEO";
 
 const SAMPLE = [
     { id: "neo", title: "NeoData", summary: "Manage office logs and production workflows.", cta: "Learn more" },
@@ -23,6 +24,11 @@ export default function Products() {
 
     return (
         <section className="pt-32 pb-20 px-4 max-w-7xl mx-auto">
+            <SEO
+                title="Products — Vritula"
+                description="Discover Vritula’s premium products designed for performance, business automation and scalability."
+                url="https://vritulacorporation.netlify.app/products"
+            />
             <h2 className="text-3xl font-semibold text-center mb-6">Our Products</h2>
             <p className="text-center text-gray-600 mb-8">Built to streamline work and increase efficiency.</p>
 

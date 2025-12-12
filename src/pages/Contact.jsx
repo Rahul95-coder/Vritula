@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import usePageTitle from "../utils/usePageTitle";
 import { useState } from "react";
+import SEO from "../components/SEO";
 
 export default function Contact() {
     usePageTitle("Contact");
@@ -21,6 +22,11 @@ export default function Contact() {
 
     return (
         <section className="pt-32 pb-20 px-4 max-w-3xl mx-auto">
+            <SEO
+                title="Contact Us — Vritula"
+                description="Get in touch with Vritula for software development, cloud services or business inquiries."
+                url="https://vritulacorporation.netlify.app/contact"
+            />
             <h2 className="text-3xl font-semibold text-center mb-6">Contact Us</h2>
             <p className="text-center text-gray-600 mb-8">Send a message and we'll reply within 1 business day.</p>
 
