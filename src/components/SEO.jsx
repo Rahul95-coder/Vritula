@@ -1,4 +1,4 @@
-import { Head } from "react-head";
+import { Title, Meta, Link } from "react-head";
 
 export default function SEO({
                                 title = "Vritula",
@@ -8,28 +8,25 @@ export default function SEO({
                                 url = "https://vritulacorporation.netlify.app",
                             }) {
     return (
-        <Head>
-            <title>{title}</title>
+        <>
+            <Title>{title}</Title>
 
-            <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
+            <Meta name="description" content={description} />
+            <Meta name="keywords" content={keywords} />
+            <Link rel="canonical" href={url} />
 
-            <link rel="canonical" href={url} />
+            <Meta property="og:title" content={title} />
+            <Meta property="og:description" content={description} />
+            <Meta property="og:image" content={image} />
+            <Meta property="og:url" content={url} />
+            <Meta property="og:type" content="website" />
 
-            {/* Open Graph */}
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content={image} />
-            <meta property="og:url" content={url} />
-            <meta property="og:type" content="website" />
+            <Meta name="twitter:card" content="summary_large_image" />
+            <Meta name="twitter:title" content={title} />
+            <Meta name="twitter:description" content={description} />
+            <Meta name="twitter:image" content={image} />
 
-            {/* Twitter */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={image} />
-
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+            <Link rel="icon" href="/favicon.ico" />
+        </>
     );
 }

@@ -1,8 +1,8 @@
-import usePageTitle from "../utils/usePageTitle";
+// import usePageTitle from "../utils/usePageTitle";
 import SEO from "../components/SEO";
 
 export default function Home() {
-    usePageTitle("Home");
+    // usePageTitle("Home");
 
     return (
         <div className="pt-20">

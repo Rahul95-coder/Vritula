@@ -1,8 +1,8 @@
-import usePageTitle from "../utils/usePageTitle";
+// import usePageTitle from "../utils/usePageTitle";
 import SEO from "../components/SEO";
 
 export default function Services() {
-    usePageTitle("Services");
+    // usePageTitle("Services");
 
     return (
         <section className="pt-32 pb-20 px-4 max-w-7xl mx-auto">

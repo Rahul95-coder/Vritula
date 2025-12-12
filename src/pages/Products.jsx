@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import usePageTitle from "../utils/usePageTitle";
+// import usePageTitle from "../utils/usePageTitle";
 import SEO from "../components/SEO";
 
 const SAMPLE = [
@@ -9,7 +9,7 @@ const SAMPLE = [
 ];
 
 export default function Products() {
-    usePageTitle("Products");
+    // usePageTitle("Products");
 
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);

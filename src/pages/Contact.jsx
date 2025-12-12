@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import usePageTitle from "../utils/usePageTitle";
+// import usePageTitle from "../utils/usePageTitle";
 import { useState } from "react";
 import SEO from "../components/SEO";
 
 export default function Contact() {
-    usePageTitle("Contact");
+    // usePageTitle("Contact");
 
     const navigate = useNavigate();
     const [submitting, setSubmitting] = useState(false);
