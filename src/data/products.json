@@ -1,0 +1,23 @@
+[
+  {
+    "id": "neo",
+    "title": "NeoData",
+    "summary": "Manage diamond office logs, employee data, and production workflows.",
+    "cta": "Learn more",
+    "image": "/products/neo.png"
+  },
+  {
+    "id": "buddy",
+    "title": "ProjectBuddy",
+    "summary": "Connect students to build collaborative IT projects effortlessly.",
+    "cta": "Learn more",
+    "image": "/products/buddy.png"
+  },
+  {
+    "id": "insight",
+    "title": "InsightPro",
+    "summary": "Business analytics for manufacturing and operations.",
+    "cta": "View details",
+    "image": "/products/insight.png"
+  }
+]
