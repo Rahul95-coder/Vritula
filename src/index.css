@@ -52,3 +52,18 @@
 @media (min-width: 768px) {
     .hero-title { font-size: 2.75rem; }
 }
+
+.nav-link {
+    @apply text-slate-700 hover:text-slate-900;
+}
+
+.mobile-link {
+    @apply block py-2 text-slate-700 hover:text-slate-900;
+}
+
+.form-input {
+    @apply mt-1 block w-full rounded-md border border-gray-300
+    focus:outline-none focus:ring-2 focus:ring-[#0F66FF]
+    focus:border-[#0F66FF];
+}
+
