@@ -3,9 +3,27 @@ import React, { useEffect, useState } from "react";
 import SEO from "../components/SEO";
 
 const SAMPLE = [
-    { id: "neo", title: "NeoData", summary: "Manage office logs and production workflows.", cta: "Learn more" },
-    { id: "buddy", title: "ProjectBuddy", summary: "Collaborative platform for teams and students.", cta: "Learn more" },
-    { id: "insight", title: "InsightPro", summary: "Analytics and dashboards for operations.", cta: "View details" },
+    {
+        id: "neo",
+        title: "NeoData",
+        summary: "Manage office logs and production workflows.",
+        cta: "Learn more",
+        image: "/products/NeoData.jpg",
+    },
+    {
+        id: "buddy",
+        title: "ProjectBuddy",
+        summary: "Collaborative platform for teams and students.",
+        cta: "Learn more",
+        image: "/products/ProjectBuddy.jpg",
+    },
+    {
+        id: "insight",
+        title: "InsightPro",
+        summary: "Analytics and dashboards for operations.",
+        cta: "View details",
+        image: "/products/InsightPro.jpg",
+    },
 ];
 
 export default function Products() {
@@ -38,11 +56,26 @@ export default function Products() {
                         <div key={i} className="bg-gray-100 animate-pulse h-48 rounded-xl" />
                     ))
                     : products.map(p => (
-                        <article key={p.id} className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition">
-                            <h3 className="text-lg font-semibold">{p.title}</h3>
-                            <p className="mt-2 text-gray-600">{p.summary}</p>
-                            <button className="mt-4 text-sm text-blue-600 font-semibold">{p.cta} →</button>
+                        <article
+                            key={p.id}
+                            className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
+                        >
+                            <img
+                                src={p.image}
+                                alt={p.title}
+                                className="w-full h-44 object-cover"
+                                loading="lazy"
+                            />
+
+                            <div className="p-6">
+                                <h3 className="text-lg font-semibold">{p.title}</h3>
+                                <p className="mt-2 text-gray-600">{p.summary}</p>
+                                <button className="mt-4 text-sm text-blue-600 font-semibold">
+                                    {p.cta} →
+                                </button>
+                            </div>
                         </article>
+
                     ))}
             </div>
         </section>
