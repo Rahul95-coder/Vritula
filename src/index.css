@@ -1,6 +1,10 @@
+/* Base typography - MuseoModerno as requested */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Global design tokens for Theme A (Atlassian-style Blue) */
 :root{
@@ -12,8 +16,6 @@
     --bg: #f8fafc;
 }
 
-/* Base typography - MuseoModerno as requested */
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap');
 
 @layer base {
     html, body, #root {
