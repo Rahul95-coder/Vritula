@@ -1,9 +1,7 @@
 {
   "name": "vritula",
   "compatibility_date": "2025-12-14",
-  "type": "javascript",
   "site": {
-    "bucket": "./dist",
-    "entry-point": "workers-site"
+    "bucket": "./dist"
   }
 }
